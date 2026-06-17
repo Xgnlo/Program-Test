@@ -1,0 +1,42 @@
+2026-06-10 16:29:16,760 - erp_auto_test - INFO - 启动浏览器: chromium (headless=False)
+2026-06-10 16:29:17,077 - erp_auto_test - INFO - 执行登录: admin
+2026-06-10 16:29:17,077 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:29:17,077 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:29:19,533 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_success_20260610_162919.png
+2026-06-10 16:29:19,773 - erp_auto_test - INFO - 执行登录: wrong_user
+2026-06-10 16:29:19,773 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:29:19,773 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:29:22,208 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_failure_invalid_user_20260610_162922.png
+2026-06-10 16:29:22,438 - erp_auto_test - INFO - 执行登录: 
+2026-06-10 16:29:22,441 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:29:22,441 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:29:24,980 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_failure_empty_username_20260610_162924.png
+2026-06-10 16:29:25,250 - erp_auto_test - INFO - 执行登录: admin
+2026-06-10 16:29:25,250 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:29:25,251 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:29:27,626 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_failure_empty_password_20260610_162927.png
+2026-06-10 16:29:27,879 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:29:27,879 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:29:30,250 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_page_elements_20260610_162930.png
+2026-06-10 16:29:30,766 - erp_auto_test - INFO - 浏览器已关闭
+2026-06-10 16:33:32,512 - erp_auto_test - INFO - 启动浏览器: chromium (headless=False)
+2026-06-10 16:33:32,733 - erp_auto_test - INFO - 执行登录: admin
+2026-06-10 16:33:32,733 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:33:32,733 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:33:35,141 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_success_20260610_163334.png
+2026-06-10 16:33:35,358 - erp_auto_test - INFO - 执行登录: wrong_user
+2026-06-10 16:33:35,358 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:33:35,359 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:33:37,828 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_failure_invalid_user_20260610_163337.png
+2026-06-10 16:33:38,032 - erp_auto_test - INFO - 执行登录: 
+2026-06-10 16:33:38,033 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:33:38,033 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:33:40,499 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_failure_empty_username_20260610_163340.png
+2026-06-10 16:33:40,747 - erp_auto_test - INFO - 执行登录: admin
+2026-06-10 16:33:40,747 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:33:40,747 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:33:43,095 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_failure_empty_password_20260610_163342.png
+2026-06-10 16:33:43,337 - erp_auto_test - INFO - 加载登录页面
+2026-06-10 16:33:43,337 - erp_auto_test - INFO - 导航到: http://127.0.0.1:5000/
+2026-06-10 16:33:45,801 - erp_auto_test - INFO - 截图已保存: reports/screenshots\test_login_page_elements_20260610_163345.png
+2026-06-10 16:33:46,058 - erp_auto_test - INFO - 浏览器已关闭

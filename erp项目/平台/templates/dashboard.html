@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明远电子科技 ERP 管理系统</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>ERP 管理系统</h2>
+                <p class="sidebar-subtitle">明远电子科技</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard" data-page="dashboard">📊 仪表盘</a></li>
+                <li><a href="/users" data-page="users">👥 用户管理</a></li>
+                <li><a href="/suppliers" data-page="suppliers">🏭 供应商管理</a></li>
+                <li><a href="/customers" data-page="customers">💼 客户管理</a></li>
+                <li><a href="/products" data-page="products">📦 商品管理</a></li>
+                <li><a href="/purchase" data-page="purchase">🛒 采购订单</a></li>
+                <li><a href="/sales" data-page="sales">💰 销售订单</a></li>
+                <li><a href="/inventory" data-page="inventory">📈 库存管理</a></li>
+                <li style="margin-top: 20px;"><a href="/" onclick="doLogout(); return false;">🚪 退出登录</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <h1 id="pageTitle">管理中心</h1>
+                </div>
+                <div class="topbar-user">
+                    <span class="user-info">欢迎您！</span>
+                </div>
+            </header>
+
+            <div id="contentArea" class="content-area">
+                <!-- 动态内容 -->
+                <div class="dashboard-grid" id="dashboardStats">
+                    <div class="stat-card">
+                        <h3>供应商总数</h3>
+                        <div class="num" id="supplierCount">--</div>
+                        <p class="stat-desc">注册供应商数量</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>客户总数</h3>
+                        <div class="num" id="customerCount">--</div>
+                        <p class="stat-desc">活跃客户数量</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>商品总数</h3>
+                        <div class="num" id="productCount">--</div>
+                        <p class="stat-desc">库存商品SKU</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>采购订单</h3>
+                        <div class="num" id="purchaseCount">--</div>
+                        <p class="stat-desc">总采购单数量</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>销售订单</h3>
+                        <div class="num" id="salesCount">--</div>
+                        <p class="stat-desc">总销售单数量</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>销售总额</h3>
+                        <div class="num" id="salesTotal">--</div>
+                        <p class="stat-desc">累计销售额</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>库存总价值</h3>
+                        <div class="num" id="inventoryValue">--</div>
+                        <p class="stat-desc">按采购价计算</p>
+                    </div>
+                    <div class="stat-card warning">
+                        <h3>库存预警</h3>
+                        <div class="num" id="lowStockCount">--</div>
+                        <p class="stat-desc">低于安全库存</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+    <script>
+        loadDashboard();
+    </script>
+</body>
+</html>

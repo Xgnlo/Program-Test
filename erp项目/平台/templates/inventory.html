@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>库存管理 - ERP系统</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>ERP 管理系统</h2>
+                <p class="sidebar-subtitle">明远电子科技</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="/dashboard" data-page="dashboard">📊 仪表盘</a></li>
+                <li><a href="/users" data-page="users">👥 用户管理</a></li>
+                <li><a href="/suppliers" data-page="suppliers">🏭 供应商管理</a></li>
+                <li><a href="/customers" data-page="customers">💼 客户管理</a></li>
+                <li><a href="/products" data-page="products">📦 商品管理</a></li>
+                <li><a href="/purchase" data-page="purchase">🛒 采购订单</a></li>
+                <li><a href="/sales" data-page="sales">💰 销售订单</a></li>
+                <li><a href="/inventory" data-page="inventory">📈 库存管理</a></li>
+                <li style="margin-top: 20px;"><a href="/" onclick="localStorage.clear();">🚪 退出登录</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <header class="topbar">
+                <div class="topbar-title"><h1 id="pageTitle">库存管理</h1></div>
+                <div class="topbar-user"><span class="user-info">欢迎您！</span></div>
+            </header>
+            <div id="contentArea" class="content-area"></div>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>loadInventory();</script>
+</body>
+</html>

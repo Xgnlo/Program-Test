@@ -1,0 +1,128 @@
+# ==================== 测试数据文件 ====================
+# 用于 YAML 数据驱动测试
+
+# -------------------- 登录数据 --------------------
+login:
+  valid_user:
+    username: "admin"
+    password: "admin123"
+    description: "有效管理员账号"
+  
+  invalid_user:
+    username: "wrong_user"
+    password: "wrong_password"
+    description: "无效账号"
+  
+  empty_username:
+    username: ""
+    password: "admin123"
+    description: "空用户名"
+  
+  empty_password:
+    username: "admin"
+    password: ""
+    description: "空密码"
+
+# -------------------- 供应商数据 --------------------
+suppliers:
+  valid_supplier:
+    name: "自动化测试供应商"
+    contact: "张三"
+    phone: "13800000001"
+    email: "supplier@example.com"
+    address: "广东省深圳市南山区"
+    remark: "Playwright 自动化测试创建"
+    description: "完整供应商数据"
+  
+  minimal_supplier:
+    name: "最小供应商"
+    contact: ""
+    phone: ""
+    email: ""
+    address: ""
+    remark: ""
+    description: "仅必填字段"
+  
+  invalid_supplier:
+    name: ""
+    contact: "李四"
+    phone: "13900000001"
+    description: "缺少名称"
+
+# -------------------- 客户数据 --------------------
+customers:
+  valid_customer:
+    name: "自动化测试客户"
+    contact: "李四"
+    phone: "13900000002"
+    email: "customer@example.com"
+    address: "北京市海淀区中关村"
+    remark: "Playwright 自动化测试创建"
+    description: "完整客户数据"
+
+# -------------------- 商品数据 --------------------
+products:
+  valid_product:
+    code: "P-AUTO-001"
+    name: "自动化测试商品"
+    category: "电子元件"
+    spec: "标准规格"
+    unit: "个"
+    purchase_price: 5.50
+    sale_price: 9.90
+    stock: 100
+    min_stock: 10
+    remark: "Playwright 自动化测试创建"
+    description: "完整商品数据"
+
+# -------------------- 采购订单数据 --------------------
+purchase_orders:
+  valid_purchase:
+    supplier_id: 1
+    product_id: 1
+    quantity: 50
+    price: 5.50
+    remark: "自动化测试采购订单"
+    description: "有效采购订单"
+
+# -------------------- 销售订单数据 --------------------
+sales_orders:
+  valid_sales:
+    customer_id: 1
+    product_id: 1
+    quantity: 10
+    price: 9.90
+    remark: "自动化测试销售订单"
+    description: "有效销售订单"
+
+# -------------------- 测试用例描述 --------------------
+test_cases:
+  login:
+    - name: "登录成功"
+      data_key: "valid_user"
+      expected: "成功跳转到仪表盘"
+    
+    - name: "登录失败-无效账号"
+      data_key: "invalid_user"
+      expected: "停留在登录页或显示错误"
+    
+    - name: "登录失败-空用户名"
+      data_key: "empty_username"
+      expected: "提示用户名不能为空"
+    
+    - name: "登录失败-空密码"
+      data_key: "empty_password"
+      expected: "提示密码不能为空"
+
+  supplier:
+    - name: "创建供应商成功"
+      data_key: "valid_supplier"
+      expected: "供应商列表中存在新创建的记录"
+    
+    - name: "创建供应商-仅必填字段"
+      data_key: "minimal_supplier"
+      expected: "成功创建供应商"
+    
+    - name: "创建供应商失败-缺少名称"
+      data_key: "invalid_supplier"
+      expected: "提示名称不能为空"
